@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>gestionPharmcies</display-name>
+  <servlet>
+    <servlet-name>PremierControlleurs</servlet-name>
+    <servlet-class>com.gestionPharmacie.controllers.PremierControlleurs</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+   <servlet>
+    <servlet-name>ListMedicament</servlet-name>
+    <servlet-class>com.gestionPharmacie.controllers.ListMedicament</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PremierControlleurs</servlet-name>
+    <url-pattern>/PremierControlleurs</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>ListMedicament</servlet-name>
+    <url-pattern>/ListMedicament</url-pattern>
+  </servlet-mapping>
+</web-app>
